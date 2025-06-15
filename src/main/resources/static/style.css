@@ -1,0 +1,171 @@
+/* Reset und Grundlayout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Obere Leiste: enthält Logo und Buttons */
+.top-area {
+    display: flex;
+    justify-content: space-between; /* verteilt links und rechts */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent; /* kein Balken */
+}
+/* Brand Box oben links */
+.brand-box {
+    background-color: #0077cc;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.brand-link {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Button-Gruppe */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons allgemein */
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Orange Login */
+.login-btn {
+    background-color: #466ca6;
+}
+.login-btn:hover {
+    background-color: #d5e885;
+}
+
+/* Blau Sign In */
+.signin-btn {
+    background-color: #469769;
+}
+.signin-btn:hover {
+    background-color: #d5e885;
+}
+/* Container: Sidebar + Content */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar links */
+.sidebar {
+    width: 220px;
+    background-color: #002b5c; /* dunkelblau */
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar Liste */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Hover-Effekt */
+.sidebar a:hover {
+    background-color: #003366;
+}
+
+/* Aktiver Link = komplett orange Hintergrund, weißer Text, abgerundet */
+.sidebar a.active {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Hauptinhalt */
+.content {
+    flex: 1;
+    padding: 30px;
+
+}
+
+.login {
+    max-width: 300px;
+    margin: 12rem auto;
+    padding: 3rem;
+    background: #c0d7fd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    input, button {
+        display: block;
+        width: 100%;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+
+.register {
+    max-width: 300px;
+    margin: 12rem auto;
+    padding: 3rem;
+    background: #a3f3c5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    input, button {
+        display: block;
+        width: 100%;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+
+.button-startseite {
+    display: inline-block;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    border: 2px solid #1f3c88;
+    color: #1f3c88;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-startseite:hover {
+    background-color: #1f3c88;
+    color: white;
+}
+
+

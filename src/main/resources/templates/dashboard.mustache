@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | Class-Fee</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<div class="top-area">
+    <div class="brand-box">
+        <a href="/index.mustache" class="brand-link">Class-Fee</a>
+    </div>
+    <div class="auth-buttons">
+        <a href="/login" class="btn login-btn">Login</a>
+        <a href="/register" class="btn signin-btn">Registrieren</a>
+    </div>
+</div>
+
+<div class="container">
+    <nav class="sidebar">
+        <ul>
+            <li><a href="/studiengaenge">Studiengänge</a></li>
+            <li><a href="/module">Module</a></li>
+            <li><a href="/feedbacks">Feedbacks</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h2>Dashboard</h2>
+        <p>Hallo {{user}}, willkommen im Class-Fee Dashboard!</p>
+
+        <section>
+            <h3>Neueste Feedbacks (Demo)</h3>
+            <ul>
+                <li><strong>Datenbanken</strong> – „Interessanter Kurs“ – Anonym, 12.06.2025</li>
+                <li><strong>Webentwicklung</strong> – „Etwas zu schnell“ – Anonym, 10.06.2025</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
