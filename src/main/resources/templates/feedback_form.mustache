@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Feedback abgeben | Class-Fee</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<!-- Obere Leiste (nur Branding, keine Auth-Buttons) -->
+<div class="top-area">
+    <div class="brand-box">
+        <a href="/" class="brand-link">Class-Fee</a>
+    </div>
+</div>
+
+
+<!-- Formularbereich -->
+<main class="form-container">
+    <h2>Neues Feedback abgeben</h2>
+
+    <form method="post" action="/feedback/new">
+        <label for="moduleId">Modul:</label>
+        <select name="moduleId" required>
+            {{#modules}}
+                <option value="{{id}}">{{name}}</option>
+            {{/modules}}
+        </select>
+
+        <label for="content">Dein Feedback:</label>
+        <textarea name="content" rows="6" placeholder="Was lief gut? Was könnte besser sein?" required></textarea>
+
+        <label class="checkbox-label">
+            <input type="checkbox" name="anonymous" checked />
+            Feedback anonym absenden
+        </label>
+        <br>
+        <button type="submit" class="btn signin-btn">Absenden</button>
+    </form>
+
+    <p style="margin-top: 20px;"><a href="/dashboard" class="button-startseite">Zurück zum Dashboard</a></p>
+</main>
+
+</body>
+</html>

@@ -168,4 +168,63 @@ body {
     color: white;
 }
 
+/*Feedback abgeben */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #d4faea;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.fab-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #1f3c88;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.fab-button:hover {
+    background-color: #3d5afe;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.checkbox-label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+
+
+
 

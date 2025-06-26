@@ -38,4 +38,14 @@ public class MainController {
         return "semester";
     }
 
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
+
+    @GetMapping("/feedback_form")
+    public String feedback_form() {
+        return "feedback_form";
+    }
+
 }

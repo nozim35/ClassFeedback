@@ -14,13 +14,16 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/",
+                                "/index",
                                 "/dashboard",
                                 "/login",
                                 "/register",
                                 "/module",
                                 "/feedbacks",
                                 "/semester",
-                                "/style.css"
+                                "/about",
+                                "/style.css",
+                                "/feedback_form"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
