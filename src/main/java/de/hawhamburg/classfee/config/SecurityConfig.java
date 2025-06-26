@@ -17,6 +17,9 @@ public class SecurityConfig {
                                 "/dashboard",
                                 "/login",
                                 "/register",
+                                "/module",
+                                "/feedbacks",
+                                "/semester",
                                 "/style.css"
                         ).permitAll()
                         .anyRequest().authenticated()

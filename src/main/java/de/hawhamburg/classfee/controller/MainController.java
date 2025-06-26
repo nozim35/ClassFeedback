@@ -12,9 +12,30 @@ public class MainController {
         return "index"; // lädt index.mustache
     }
 
+    @GetMapping("/index")
+    public String index() {
+        return "index";
+    }
+
     @GetMapping("/dashboard")
     public String dashboard(Model model) {
         model.addAttribute("user", "Gast"); // später dynamisch
         return "dashboard";
     }
+
+    @GetMapping("/module")
+    public String module() {
+        return "module";
+    }
+
+    @GetMapping("/feedbacks")
+    public String feedbacks() {
+        return "feedbacks";
+    }
+
+    @GetMapping("/semester")
+    public String semester() {
+        return "semester";
+    }
+
 }
