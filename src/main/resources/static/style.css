@@ -223,7 +223,37 @@ form textarea {
     margin-top: 1rem;
     font-size: 0.95rem;
 }
+/* kacheln für fächer */
 
+.kachel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+    gap: 20px; /* Abstand zwischen den Kacheln */
+    justify-content: center; /* zentriert das gesamte Grid */
+    margin-top: 40px;
+}
+
+.kachel {
+    background-color: #89cff0;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    height: 300px; /* feste Höhe für rechteckige Kachel */
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.kachel:hover {
+    background-color: #e0e7ff;
+    transform: translateY(-4px);
+}
 
 
 

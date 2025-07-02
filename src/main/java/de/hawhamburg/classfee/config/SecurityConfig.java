@@ -23,7 +23,18 @@ public class SecurityConfig {
                                 "/semester",
                                 "/about",
                                 "/style.css",
-                                "/feedback_form"
+                                "/feedback_form",
+                                "/mathe1",
+                                "/informatik1",
+                                "/programmieren1",
+                                "/media_game_design1",
+                                "/dramaturgie1",
+                                "medienrecht",
+                                "/wintersemester24_25",
+                                "/sommersemester25"
+
+
+
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
